@@ -12,11 +12,24 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
+    // MARK: IBOutlets
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var feelsLikeLabel: UILabel!
+    @IBOutlet weak var weatherLabel: UILabel!
+    
+    @IBOutlet weak var weatherIcon: UIImageView!
+    
+    // MARK: Properties
     let locationManager = CLLocationManager()
     let geoCoder = CLGeocoder()
     var location = CLLocationCoordinate2D()
     
     override func viewDidLoad() {
+        tryToGetLocationPermission()
+    }
+    
+    func tryToGetLocationPermission() {
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         
@@ -34,17 +47,28 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         guard let location: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         self.location = location
         
-        let object = DayHourly()
-        object.downloadData(location: location)
+        // create an object to download weather details for today
+        let todayDetails = Today()
         
+        todayDetails.downloadData(location: location) { (data: condition) in
+        
+            //update the UI on the main queue
+            DispatchQueue.main.async {
+                self.updateLabels(with: data)
+            }
+        }
+    }
+    
+    //update labels and icon for the view
+    func updateLabels(with data: condition) {
+        cityLabel.text = data.location!
+        temperatureLabel.text = "temperature: \(data.temperatureString!)"
+        feelsLikeLabel.text = "feels like: \(data.feelsLikeString!)"
+        weatherLabel.text = data.weather!
+        
+        //set the icon image
+        weatherIcon.setCustomImage("https://icons.wxug.com/i/c/i/\(data.icon!).gif")
     }
     
     
 }
-
-
-
-//- Download JSON data for given coordinates.
-//- Create a struct to store the data.
-//- Parse values for days
-//- Create UI to display date.

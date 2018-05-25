@@ -6,6 +6,8 @@
 //  Copyright © 2018 Little Maxima LLC. All rights reserved.
 //
 
+// This stuct is used to decode the downloaded JSON object
+
 struct condition: Decodable {
     var location: String?
     var temperature: Double?

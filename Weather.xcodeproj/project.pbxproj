@@ -22,6 +22,7 @@
 		7B71D9EB20B766FD002DE9FB /* ForecastDayVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9EA20B766FD002DE9FB /* ForecastDayVM.swift */; };
 		7B71D9ED20B7671F002DE9FB /* ForecastHourlyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9EC20B7671F002DE9FB /* ForecastHourlyVM.swift */; };
 		7B71D9EF20B7B471002DE9FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9EE20B7B471002DE9FB /* Constants.swift */; };
+		7B71D9F120B8AB99002DE9FB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9F020B8AB99002DE9FB /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7B71D9EA20B766FD002DE9FB /* ForecastDayVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayVM.swift; sourceTree = "<group>"; };
 		7B71D9EC20B7671F002DE9FB /* ForecastHourlyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHourlyVM.swift; sourceTree = "<group>"; };
 		7B71D9EE20B7B471002DE9FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7B71D9F020B8AB99002DE9FB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				7B55DE38209AFD590011EC3C /* Assets.xcassets */,
 				7B55DE3A209AFD590011EC3C /* LaunchScreen.storyboard */,
 				7B55DE3D209AFD590011EC3C /* Info.plist */,
+				7B71D9F020B8AB99002DE9FB /* Utilities.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				7B71D9EF20B7B471002DE9FB /* Constants.swift in Sources */,
 				7B71D9ED20B7671F002DE9FB /* ForecastHourlyVM.swift in Sources */,
+				7B71D9F120B8AB99002DE9FB /* Utilities.swift in Sources */,
 				7B71D9E320B754FF002DE9FB /* ForecastDayModel.swift in Sources */,
 				7B71D9E920B766C0002DE9FB /* ConditionsVM.swift in Sources */,
 				7B55DE34209AFD570011EC3C /* ViewController.swift in Sources */,

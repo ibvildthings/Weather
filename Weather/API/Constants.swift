@@ -8,4 +8,5 @@
 
 import Foundation
 
+// api key obtained from Wunderground API
 var API_KEY = "bccc076c8fef97e8"

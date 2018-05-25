@@ -12,18 +12,20 @@ import MapKit
 //class to download data for today
 class Today {
     
-func downloadData(location: CLLocationCoordinate2D) {
-    let weatherAPI: WeatherAPI = WeatherAPI(location: location, apiKey: API_KEY)
-    
-    weatherAPI.downloadData(for: .today) { (data) in
-        do {
-            let dayHourlyData = try JSONDecoder().decode(condition.self, from: data!)
-            print(dayHourlyData)
+    func downloadData(location: CLLocationCoordinate2D, completion: @escaping (_ data: condition) -> Void)  {
+        let weatherAPI: WeatherAPI = WeatherAPI(location: location, apiKey: API_KEY)
+        
+        weatherAPI.downloadData(for: .today) { (data) in
+            do {
+                let todayData = try JSONDecoder().decode(condition.self, from: data!)
+                print(todayData)
+                
+                completion(todayData)
+            }
+            catch {
+                print(error)
+            }
         }
-        catch {
-            print(error)
-        }
-    }
-} // end downloadData
+    } // end downloadData
 
 } // end class

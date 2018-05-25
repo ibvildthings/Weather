@@ -6,6 +6,7 @@
 //  Copyright © 2018 Little Maxima LLC. All rights reserved.
 //
 
+// This stuct is used to decode the downloaded JSON object
 
 struct container: Decodable {
     var days: [forecastDay]
