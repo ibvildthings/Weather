@@ -11,16 +11,15 @@ import UIKit
 extension UIImageView {
     
     func setCustomImage(_ imgURLString: String?) {
-        print(imgURLString)
         guard let imageURL = URL(string: imgURLString!) else {
-            self.image = UIImage()
+            self.image = UIImage(named: "loading.png")
             return
         }
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: imageURL)
             DispatchQueue.main.async {
                 print("Loading weather icon")
-                self.image = UIImage(data: data!)
+                self.image = data != nil ? UIImage(data: data!) : UIImage(named: "loading.png")
             }
         }
     }

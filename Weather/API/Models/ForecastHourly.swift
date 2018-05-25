@@ -48,7 +48,6 @@ struct forecastHourly: Decodable {
         
         let temp = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .temp)
         temperature = try temp.decode(String.self, forKey: .temperature)
-        
     }
 }
 

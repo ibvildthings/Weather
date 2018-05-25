@@ -59,7 +59,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    //update labels and icon for the view
+    // update labels and icon for the view
     func updateLabels(with data: condition) {
         cityLabel.text = data.location!
         temperatureLabel.text = "temperature: \(data.temperatureString!)"
@@ -67,7 +67,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         weatherLabel.text = data.weather!
         
         //set the icon image
-        weatherIcon.setCustomImage("https://icons.wxug.com/i/c/i/\(data.icon!).gif")
+        weatherIcon.setCustomImage( getURL(for: data.icon) )
+    }
+    
+    
+    
+    
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // pass location if the segue is to the 10 Day Forecast screen
+        if segue.identifier == "10DayForecast" {
+            if let vc = segue.destination as? TenDayForecastTableViewController {
+                vc.location = self.location
+            }
+            
+        }
     }
     
     

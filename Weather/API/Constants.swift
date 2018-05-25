@@ -10,3 +10,9 @@ import Foundation
 
 // api key obtained from Wunderground API
 var API_KEY = "bccc076c8fef97e8"
+
+
+// get url for icon
+func getURL(for icon: String?) -> String {
+    return "https://icons.wxug.com/i/c/i/\(icon!).gif"
+}

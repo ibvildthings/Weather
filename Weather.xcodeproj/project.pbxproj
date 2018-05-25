@@ -23,6 +23,7 @@
 		7B71D9ED20B7671F002DE9FB /* ForecastHourlyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9EC20B7671F002DE9FB /* ForecastHourlyVM.swift */; };
 		7B71D9EF20B7B471002DE9FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9EE20B7B471002DE9FB /* Constants.swift */; };
 		7B71D9F120B8AB99002DE9FB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9F020B8AB99002DE9FB /* Utilities.swift */; };
+		7B71D9F320B8B143002DE9FB /* TenDayForecastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9F220B8B143002DE9FB /* TenDayForecastTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		7B71D9EC20B7671F002DE9FB /* ForecastHourlyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHourlyVM.swift; sourceTree = "<group>"; };
 		7B71D9EE20B7B471002DE9FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7B71D9F020B8AB99002DE9FB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7B71D9F220B8B143002DE9FB /* TenDayForecastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenDayForecastTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,7 @@
 			children = (
 				7B71D9DF20B754A3002DE9FB /* API */,
 				7B55DE31209AFD570011EC3C /* AppDelegate.swift */,
-				7B55DE33209AFD570011EC3C /* ViewController.swift */,
+				7B71D9F420B8B488002DE9FB /* View Controllers */,
 				7B55DE35209AFD570011EC3C /* Main.storyboard */,
 				7B55DE38209AFD590011EC3C /* Assets.xcassets */,
 				7B55DE3A209AFD590011EC3C /* LaunchScreen.storyboard */,
@@ -157,6 +159,15 @@
 				7B71D9EC20B7671F002DE9FB /* ForecastHourlyVM.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7B71D9F420B8B488002DE9FB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B55DE33209AFD570011EC3C /* ViewController.swift */,
+				7B71D9F220B8B143002DE9FB /* TenDayForecastTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 				7B71D9EB20B766FD002DE9FB /* ForecastDayVM.swift in Sources */,
 				7B71D9E520B75529002DE9FB /* ForecastHourly.swift in Sources */,
 				7B55DE52209AFE3E0011EC3C /* API.swift in Sources */,
+				7B71D9F320B8B143002DE9FB /* TenDayForecastTableViewController.swift in Sources */,
 				7B71D9E120B754C5002DE9FB /* ConditionsModel.swift in Sources */,
 				7B55DE32209AFD570011EC3C /* AppDelegate.swift in Sources */,
 			);
