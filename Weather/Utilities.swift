@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//utility function to download images async
+// utility function to download images async
 extension UIImageView {
     
     func setCustomImage(_ imgURLString: String?) {

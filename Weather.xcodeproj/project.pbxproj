@@ -104,13 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				7B71D9DF20B754A3002DE9FB /* API */,
-				7B55DE31209AFD570011EC3C /* AppDelegate.swift */,
 				7B71D9F420B8B488002DE9FB /* View Controllers */,
+				7B71D9E720B7669C002DE9FB /* ViewModels */,
+				7B55DE31209AFD570011EC3C /* AppDelegate.swift */,
+				7B71D9F020B8AB99002DE9FB /* Utilities.swift */,
 				7B55DE35209AFD570011EC3C /* Main.storyboard */,
 				7B55DE38209AFD590011EC3C /* Assets.xcassets */,
 				7B55DE3A209AFD590011EC3C /* LaunchScreen.storyboard */,
 				7B55DE3D209AFD590011EC3C /* Info.plist */,
-				7B71D9F020B8AB99002DE9FB /* Utilities.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -135,10 +136,9 @@
 		7B71D9DF20B754A3002DE9FB /* API */ = {
 			isa = PBXGroup;
 			children = (
-				7B71D9E720B7669C002DE9FB /* ViewModels */,
-				7B71D9E620B7554E002DE9FB /* Models */,
 				7B71D9EE20B7B471002DE9FB /* Constants.swift */,
 				7B55DE51209AFE3E0011EC3C /* API.swift */,
+				7B71D9E620B7554E002DE9FB /* Models */,
 			);
 			path = API;
 			sourceTree = "<group>";

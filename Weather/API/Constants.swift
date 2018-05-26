@@ -9,7 +9,7 @@
 import Foundation
 
 // api key obtained from Wunderground API
-var API_KEY = "bccc076c8fef97e8"
+var API_KEY = "ADD-YOUR-OWN-KEY"
 
 
 // get url for icon
