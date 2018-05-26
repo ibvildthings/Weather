@@ -18,7 +18,7 @@ class Today {
         weatherAPI.downloadData(for: .today) { (data) in
             do {
                 let todayData = try JSONDecoder().decode(condition.self, from: data!)
-                print(todayData)
+                //print(todayData)
                 
                 completion(todayData)
             }

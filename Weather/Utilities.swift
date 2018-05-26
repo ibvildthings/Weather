@@ -18,7 +18,6 @@ extension UIImageView {
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: imageURL)
             DispatchQueue.main.async {
-                print("Loading weather icon")
                 self.image = data != nil ? UIImage(data: data!) : UIImage(named: "loading.png")
             }
         }

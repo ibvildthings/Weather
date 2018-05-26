@@ -18,7 +18,7 @@ class TenDays {
         weatherAPI.downloadData(for: .tenDays) { (data) in
             do {
                 let dayHourlyData = try JSONDecoder().decode(container.self, from: data!)
-                print(dayHourlyData)
+                //print(dayHourlyData)
                 
                 completion(dayHourlyData)
             }

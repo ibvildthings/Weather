@@ -28,9 +28,11 @@ struct forecastHourly: Decodable {
     var condition: String?
     var icon: String?
     var temperature: String?
+    var weekday: String?
     
     enum CodingKeys: String, CodingKey {
         case FCTTIME = "FCTTIME"
+        case weekday = "weekday_name"
         case temp = "temp"
         case civil = "civil"
         case condition = "condition"
@@ -45,6 +47,7 @@ struct forecastHourly: Decodable {
         
         let FCTTIME = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .FCTTIME)
         civil = try FCTTIME.decode(String.self, forKey: .civil)
+        weekday = try FCTTIME.decode(String.self, forKey: .weekday)
         
         let temp = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .temp)
         temperature = try temp.decode(String.self, forKey: .temperature)

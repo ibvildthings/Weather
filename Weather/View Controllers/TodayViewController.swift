@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class TodayViewController: UIViewController, CLLocationManagerDelegate {
     
     // MARK: IBOutlets
     @IBOutlet weak var cityLabel: UILabel!
@@ -67,7 +67,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         weatherLabel.text = data.weather!
         
         //set the icon image
-        weatherIcon.setCustomImage( getURL(for: data.icon) )
+        weatherIcon.setCustomImage( getIconURL(for: data.icon) )
     }
     
     

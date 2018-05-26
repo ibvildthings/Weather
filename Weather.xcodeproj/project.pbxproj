@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B55DE32209AFD570011EC3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55DE31209AFD570011EC3C /* AppDelegate.swift */; };
-		7B55DE34209AFD570011EC3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55DE33209AFD570011EC3C /* ViewController.swift */; };
+		7B55DE34209AFD570011EC3C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55DE33209AFD570011EC3C /* TodayViewController.swift */; };
 		7B55DE37209AFD570011EC3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B55DE35209AFD570011EC3C /* Main.storyboard */; };
 		7B55DE39209AFD590011EC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B55DE38209AFD590011EC3C /* Assets.xcassets */; };
 		7B55DE3C209AFD590011EC3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B55DE3A209AFD590011EC3C /* LaunchScreen.storyboard */; };
@@ -24,6 +24,7 @@
 		7B71D9EF20B7B471002DE9FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9EE20B7B471002DE9FB /* Constants.swift */; };
 		7B71D9F120B8AB99002DE9FB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9F020B8AB99002DE9FB /* Utilities.swift */; };
 		7B71D9F320B8B143002DE9FB /* TenDayForecastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9F220B8B143002DE9FB /* TenDayForecastTableViewController.swift */; };
+		7B71D9F620B8BFC5002DE9FB /* DayHourlyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71D9F520B8BFC5002DE9FB /* DayHourlyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		7B55DE2E209AFD570011EC3C /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B55DE31209AFD570011EC3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B55DE33209AFD570011EC3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B55DE33209AFD570011EC3C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		7B55DE36209AFD570011EC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B55DE38209AFD590011EC3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B55DE3B209AFD590011EC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		7B71D9EE20B7B471002DE9FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7B71D9F020B8AB99002DE9FB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7B71D9F220B8B143002DE9FB /* TenDayForecastTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenDayForecastTableViewController.swift; sourceTree = "<group>"; };
+		7B71D9F520B8BFC5002DE9FB /* DayHourlyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHourlyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +166,9 @@
 		7B71D9F420B8B488002DE9FB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7B55DE33209AFD570011EC3C /* ViewController.swift */,
+				7B55DE33209AFD570011EC3C /* TodayViewController.swift */,
 				7B71D9F220B8B143002DE9FB /* TenDayForecastTableViewController.swift */,
+				7B71D9F520B8BFC5002DE9FB /* DayHourlyTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -276,10 +279,11 @@
 				7B71D9F120B8AB99002DE9FB /* Utilities.swift in Sources */,
 				7B71D9E320B754FF002DE9FB /* ForecastDayModel.swift in Sources */,
 				7B71D9E920B766C0002DE9FB /* ConditionsVM.swift in Sources */,
-				7B55DE34209AFD570011EC3C /* ViewController.swift in Sources */,
+				7B55DE34209AFD570011EC3C /* TodayViewController.swift in Sources */,
 				7B71D9EB20B766FD002DE9FB /* ForecastDayVM.swift in Sources */,
 				7B71D9E520B75529002DE9FB /* ForecastHourly.swift in Sources */,
 				7B55DE52209AFE3E0011EC3C /* API.swift in Sources */,
+				7B71D9F620B8BFC5002DE9FB /* DayHourlyTableViewController.swift in Sources */,
 				7B71D9F320B8B143002DE9FB /* TenDayForecastTableViewController.swift in Sources */,
 				7B71D9E120B754C5002DE9FB /* ConditionsModel.swift in Sources */,
 				7B55DE32209AFD570011EC3C /* AppDelegate.swift in Sources */,
