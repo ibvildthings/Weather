@@ -1,4 +1,4 @@
-# GitHub-Followers
+# Weather App
 
 I've used the Weather Underground API to build a Weather App to complete this app.
 Because this was not a UI design challenge, I did not spend too much time on UI design.
